@@ -11,7 +11,7 @@ dependencies {
 }
 sourceSets {
     main {
-        groovy.srcDirs = ["../plugin/src/main/groovy"]
-        resources.srcDirs = ["../plugin/src/main/resources"]
+        groovy.srcDirs = ["../gradle-plugin/src/main/groovy"]
+        resources.srcDirs = ["../gradle-plugin/src/main/resources"]
     }
 }

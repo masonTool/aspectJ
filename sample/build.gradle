@@ -12,7 +12,22 @@ apply plugin: 'com.android.application'
 //        classpath 'com.mapeiyu.aspectJ:aspectJ:1.0.0'
 //    }
 //}
-//apply plugin: 'aspectJ'
+
+//Common Setting!!!!
+//Because of buildSrc, This common setting is invalid. You can try this in another project
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/mapeiyu/maven'
+        }
+    }
+    dependencies {
+        classpath 'com.mapeiyu.aspectJ:gradle-plugin:1.0.0'
+    }
+}
+
+apply plugin: 'aspectJ'
 
 android {
     compileSdkVersion 25
