@@ -9,7 +9,7 @@ dependencies {
 
 def parentName = getRootProject().name
 group "com.mapeiyu.$parentName"
-version "1.0.0"
+version "1.0.1"
 
 //// for test with local repo
 //apply plugin: 'maven'

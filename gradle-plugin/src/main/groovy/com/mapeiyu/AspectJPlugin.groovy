@@ -20,7 +20,7 @@ class AspectJPlugin implements Plugin<Project> {
                 processCompile(variant.javaCompile, project.android.bootClasspath.join(File.pathSeparator))
             }
         } else if (project.plugins.findPlugin('java')) {
-            processCompile(tasks.getByName("compileJava"), null)
+            processCompile(project.tasks.getByName("compileJava"), null)
         } else {
             throw new IllegalStateException("'android' or 'android-library' or 'java' plugin required.")
         }
